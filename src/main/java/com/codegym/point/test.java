@@ -1,11 +1,13 @@
 package com.codegym.point;
 
-public class test extends Point3D {
+public class test extends MoveablePoint {
     public static void main(String[] args) {
-        Point3D point3D = new Point3D();
-        System.out.println(point3D);
+        MoveablePoint moveablePoint = new MoveablePoint();
+        System.out.println(moveablePoint);
 
-        point3D = new Point3D(1, 2,3);
-        System.out.println(point3D);
+        moveablePoint = new MoveablePoint(1, 2,3,4);
+        System.out.println(moveablePoint);
+        moveablePoint.move();
+        System.out.println(moveablePoint);
     }
 }
